@@ -24,8 +24,8 @@
 
 ## 技術スタック
 
-| 領域 | 技術 | 選定の意図 |
-| --- | --- | --- |
+| 領域 | 技術 |
+| --- | --- | 
 | フレームワーク | [Astro](https://astro.build/) SSR + TypeScript | 
 | UI | Tailwind CSS v4 / React Islands |
 | データ | [Supabase](https://supabase.com/)（PostgreSQL） | 
