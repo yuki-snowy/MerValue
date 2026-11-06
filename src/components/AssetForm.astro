@@ -149,19 +149,8 @@ const initialMercariUrl = asset?.name
       </select>
     </label>
 
-    <label class="block sm:col-span-2">
-      <span class="mb-1.5 block text-sm font-medium text-ink">画像 URL</span>
-      <input
-        name="image_url"
-        type="url"
-        value={asset?.image_url ?? ''}
-        placeholder="未設定時はカテゴリ既定画像を表示"
-        class="w-full rounded-md border border-line bg-white px-3 py-2.5 outline-none ring-accent/30 focus:ring-2"
-      />
-      <p class="mt-1.5 text-xs text-ink-muted">
-        空欄のときはカテゴリごとのデフォルト画像を使います。URL を入れるとその画像を優先します。
-      </p>
-    </label>
+    <!-- 画像 URL は UI に出さない。既存値がある場合のみ保持する -->
+    <input type="hidden" name="image_url" value={asset?.image_url ?? ''} />
 
     <label class="block sm:col-span-2">
       <span class="mb-1.5 block text-sm font-medium text-ink">メモ</span>
