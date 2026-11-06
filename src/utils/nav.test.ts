@@ -10,11 +10,11 @@ describe('isAppNavActive', () => {
   it('資産一覧は詳細ページも含むが新規登録は除く', () => {
     expect(isAppNavActive('/assets', '/assets')).toBe(true);
     expect(isAppNavActive('/assets', '/assets/abc')).toBe(true);
-    expect(isAppNavActive('/assets', '/assets/new')).toBe(false);
+    expect(isAppNavActive('/assets', '/assets/add')).toBe(false);
   });
 
   it('新規登録は完全一致', () => {
-    expect(isAppNavActive('/assets/new', '/assets/new')).toBe(true);
-    expect(isAppNavActive('/assets/new', '/assets')).toBe(false);
+    expect(isAppNavActive('/assets/add', '/assets/add')).toBe(true);
+    expect(isAppNavActive('/assets/add', '/assets')).toBe(false);
   });
 });

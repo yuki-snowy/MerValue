@@ -69,7 +69,7 @@
 | `/` | TOP（ブランド・キャッチ・導線） |
 | `/dashboard` | 資産サマリー（金額 / 推移 / カテゴリ構成 / 最近の登録） |
 | `/assets` | 資産一覧（フィルタ・ページネーション・メ〇カリ検索） |
-| `/assets/new` | 新規登録 |
+| `/assets/add` | 新規登録 |
 | `/assets/[id]` | 詳細・編集・削除確認 |
 | `/api/auto-category` | カテゴリ自動判定 API |
 | `/api/fetch-price` | 参考相場推定 API |
